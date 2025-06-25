@@ -1121,8 +1121,9 @@ top bar
     .sb-top-bar-frame .sb-top-bar .sb-logo-frame {
       display: flex;
       align-items: center;
-      height: 80px;
-      width: 130px;
+      height: 50px;
+      /* height: 80px; */
+      /* width: 130px; */
       transition: 0.3s ease-in-out; }
       .sb-top-bar-frame .sb-top-bar .sb-logo-frame img {
         width: 100%; }
