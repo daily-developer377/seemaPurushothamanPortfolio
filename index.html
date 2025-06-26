@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/plugins/fancybox.min.css" />
     <!-- starbelly css -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="cstm-styles.css" />
+    <link rel="stylesheet" href="cstm-responsive.css" />
     <!-- page title -->
     <title>Starbelly</title>
   </head>
@@ -56,7 +58,7 @@
           <div class="sb-top-bar">
             <a href="./" class="sb-logo-frame">
               <!-- logo img -->
-              <p>Seema Purushothaman</p>
+              <p class="mb-0">Seema Purushothaman</p>
               <!-- <img src="img/ui/logo.svg" alt="Starbelly" /> -->
             </a>
             <!-- menu -->
@@ -90,9 +92,9 @@
                   <li class="">
                     <a href="">Contact</a>
                   </li>
-                  <li class="">
+                  <!-- <li class="">
                     <a href="">Blog</a>
-                  </li>
+                  </li> -->
                 </ul>
               </nav>
               <div class="sb-buttons-frame">
@@ -208,31 +210,37 @@
       <!-- dynamic content -->
       <div id="sb-dynamic-content" class="sb-transition-fade">
         <!-- banner -->
-        <section class="sb-banner">
-          <div class="sb-bg-1">
+        <section class="sb-banner bannerVideoSection">
+          <video autoplay muted loop playsinline class="bg-video">
+            <source src="assets/video/bg-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-overlay"></div>
+          <!-- <div class="sb-bg-1">
             <div></div>
-          </div>
+          </div> -->
           <div class="container">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-12">
                 <!-- main title -->
                 <div class="sb-main-title-frame">
                   <div class="sb-main-title">
-                    <span class="sb-suptitle sb-mb-30">Hi, new friend!</span>
-                    <h1 class="sb-mb-30">
-                      We do not <span>cook</span>, <br />we
-                      <span>create</span> your <br />emotions!
+                    <span class="sb-suptitle sb-mb-30"
+                      >Welcome to a world of mindful words</span
+                    >
+                    <h1 class="sb-mb-30 bannerSectionH1">
+                      Writing nature, culture, and conscious change
                     </h1>
-                    <p class="sb-text sb-text-lg sb-mb-30">
-                      Consectetur numquam poro nemo veniam<br />eligendi rem
-                      adipisci quo modi.
+                    <p class="sb-text sb-text-lg sb-mb-30 text-white">
+                      Words rooted in nature, <br />growing through thoughtful
+                      reflection.
                     </p>
                     <!-- button -->
                     <a href="menu-1.html" class="sb-btn">
                       <span class="sb-icon">
                         <img src="img/ui/icons/menu.svg" alt="icon" />
                       </span>
-                      <span>Our menu</span>
+                      <span>Biographical Sketch</span>
                     </a>
                     <!-- button end -->
                     <!-- button -->
@@ -240,41 +248,12 @@
                       <span class="sb-icon">
                         <img src="img/ui/icons/arrow.svg" alt="icon" />
                       </span>
-                      <span>About us</span>
+                      <span>Blog</span>
                     </a>
                     <!-- button end -->
                   </div>
                 </div>
                 <!-- main title end -->
-              </div>
-              <div class="col-lg-6">
-                <div class="sb-illustration-1">
-                  <img
-                    src="img/illustrations/girl.png"
-                    alt="girl"
-                    class="sb-girl"
-                  />
-                  <div class="sb-cirkle-1"></div>
-                  <div class="sb-cirkle-2"></div>
-                  <div class="sb-cirkle-3"></div>
-                  <div class="sb-cirkle-4"></div>
-                  <div class="sb-cirkle-5"></div>
-                  <img
-                    src="img/illustrations/3.svg"
-                    alt="phones"
-                    class="sb-pik-1"
-                  />
-                  <img
-                    src="img/illustrations/1.svg"
-                    alt="phones"
-                    class="sb-pik-2"
-                  />
-                  <img
-                    src="img/illustrations/2.svg"
-                    alt="phones"
-                    class="sb-pik-3"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -286,10 +265,75 @@
           <div class="container">
             <div class="row flex-md-row-reverse">
               <div class="col-lg-6 align-self-center sb-mb-30">
-                <h2 class="sb-mb-60">
-                  We are doing more than <br />you expect
-                </h2>
-                <ul class="sb-features">
+                <h2 class="sb-mb-60">Biographical Sketch</h2>
+                <p>
+                  Seema’s career spans over three decades of work located at the
+                  interface of society, development, and ecosystems. Her career
+                  evolved from that of a field officer to field researcher, to a
+                  conceptual explorer, towards action research and advocacy.
+                </p>
+                <p>
+                  Geographically, Seema’s engagements span across peri urban
+                  zones, production landscapes and forest peripheries. By now,
+                  Seema has spent 12 years at the University, integrating
+                  concepts and realities in teaching, inclusive action research
+                  and in advocacy.
+                </p>
+                <p>
+                  A bachelor’s degree (1982−86) from Kerala Agricultural
+                  University provided her with a multi-disciplinary base that
+                  kindled a strong aptitude towards Economics, especially Indian
+                  economy. Leaving a position with the Government of Kerala, she
+                  then pursued a master's degree in Agricultural Economics
+                  authoring her dissertation on the economic impact of
+                  industrial pollution on farmers. This published work trained
+                  Seema’s interest towards environmental Economics, then a newly
+                  emerging field.
+                </p>
+                <p>
+                  In 1990, while working at the Institute of Economic Growth as
+                  a Research Assistant, Seema secured a Ford Foundation
+                  scholarship to join the Environmental Economics programme at
+                  University College London. That was the beginning of a long
+                  journey with the concept and practice of sustainability.
+                </p>
+                <p>
+                  Her journey as an environmental economist became visible in
+                  1991, through a global scale economic valuation of tropical
+                  forests, co-authored with Prof. David Pearce. This pioneering
+                  work was followed by a decade long involvement in water and
+                  forest related issues in various parts of India. Applying
+                  Environmental Economics also to study adivasi communities of
+                  southern India, culminated in her doctoral thesis on the
+                  economics of tribal land use. This was the beginning of her
+                  engagements with the rights and livelihoods of indigenous
+                  communities.
+                </p>
+                <p>
+                  Her empirical work and engagement with the discourse on
+                  sustainable development and association with networks like
+                  SANDEE (South Asian Network for Development and Environmental
+                  Economics), INSEE (Indian Society for Ecological Economics)
+                  and networks around rural and agrarian studies, and the Global
+                  Land Initiative of The United Nations Convention to Combat
+                  Desertification (UNCCD) has been constantly infusing
+                  social-institutional, distributional, educational and
+                  political dimensions of sustainability in her work.
+                </p>
+                <p>
+                  Nine years spent at ATREE (Ashoka Trust for Ecology and the
+                  Environment) from 2003 and 12 years at Azim Premji University
+                  till 2025 sharpened Seema’s interdisciplinary teaching skills.
+                  This lens was instrumental in consolidating her attention
+                  towards Ecological Economics. Long encounter with field
+                  realities in India and other parts of the Global South,
+                  together with her engagement in various academic networks,
+                  international organisations, Indian voluntary sector in
+                  development & sustainability as well as with small farmer
+                  community at the grassroots, catalysed the emergence of an
+                  action researcher cum real time educator in Seema.
+                </p>
+                <!-- <ul class="sb-features">
                   <li class="sb-features-item sb-mb-60">
                     <div class="sb-number">01</div>
                     <div class="sb-feature-text">
@@ -322,7 +366,7 @@
                       </p>
                     </div>
                   </li>
-                </ul>
+                </ul> -->
               </div>
               <div class="col-lg-6 align-self-center">
                 <div class="sb-illustration-2 sb-mb-90">
@@ -884,7 +928,7 @@
             <div class="sb-footer-frame">
               <a href="home-1.html" class="sb-logo-frame">
                 <!-- logo img -->
-                <p>Seema Purushothaman</p>
+                <p class="mb-0">Seema Purushothaman</p>
                 <!-- <img src="img/ui/logo.svg" alt="Starbelly" /> -->
               </a>
               <ul class="sb-social">

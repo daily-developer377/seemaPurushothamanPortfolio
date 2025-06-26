@@ -1,0 +1,14 @@
+/* .bannerSectionH1 {
+  font-size: 60px !important;
+} */
+@media (min-width: 992px) {
+  /* .bannerSectionH1 {
+    font-size: 60px !important;
+  } */
+}
+@media (max-width: 768px) {
+  .bannerSectionH1 {
+    font-size: 40px !important;
+    line-height: 50px;
+  }
+}
