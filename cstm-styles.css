@@ -30,3 +30,15 @@
 .bannerSectionH1 {
   color: #fff;
 }
+.biographyParaContainer p {
+  text-align: justify;
+}
+.sb-category-icon-cstm {
+  margin: 0 !important;
+}
+.sb-card-body-cstm {
+  justify-content: space-between;
+}
+.ctaBtnIndex {
+  padding: 2rem 3rem;
+}
