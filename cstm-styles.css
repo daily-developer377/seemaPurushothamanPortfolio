@@ -42,3 +42,7 @@
 .ctaBtnIndex {
   padding: 2rem 3rem;
 }
+.bannerSectionBtn span {
+  padding: 1rem !important;
+  /* text-align: center; */
+}
