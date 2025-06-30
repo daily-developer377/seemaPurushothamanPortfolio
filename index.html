@@ -90,7 +90,7 @@
                     <a href="">Interest Areas</a>
                   </li>
                   <li class="">
-                    <a href="">Contact</a>
+                    <a href="contact.html">Contact</a>
                   </li>
                   <!-- <li class="">
                     <a href="">Blog</a>
@@ -221,10 +221,7 @@
                       reflection.
                     </p>
                     <!-- button -->
-                    <a
-                      href=""
-                      class="sb-btn bannerSectionBtn"
-                    >
+                    <a href="" class="sb-btn bannerSectionBtn">
                       <!-- <span class="sb-icon">
                         <img src="img/ui/icons/menu.svg" alt="icon" />
                       </span> -->
@@ -486,7 +483,13 @@
               <div
                 class="col-lg-6 d-flex align-items-center justify-content-end"
               >
-                <a href="" class="sb-btn ctaBtnIndex rounded"> Reach Out </a>
+                <a
+                  href="https://smallfarmdynamics.wordpress.com/"
+                  target="_blank"
+                  class="sb-btn ctaBtnIndex rounded"
+                >
+                  Reach Out
+                </a>
               </div>
             </div>
           </div>
@@ -545,5 +548,21 @@
     <script src="js/plugins/fancybox.min.js"></script>
     <!-- starbelly js -->
     <script src="js/main.js"></script>
+
+    <!--  -->
+    <script>
+      document.addEventListener("click", function (e) {
+        const el = document.elementFromPoint(e.clientX, e.clientY);
+        console.log("Clicked element is:", el);
+      });
+      //
+      // document
+      //   .querySelector(".ctaBtnIndex")
+      //   .addEventListener("click", function (e) {
+      //     console.log("Link clicked — manually opening!");
+      //     window.open(this.href, "_blank"); // force open in new tab
+      //   });
+    </script>
+    <!--  -->
   </body>
 </html>

@@ -75,7 +75,9 @@ $(function () {
     containers: ["#sb-dynamic-content", "#sb-dynamic-menu"],
     animateHistoryBrowsing: true,
     linkSelector:
-      ".sb-navigation a:not([data-no-swup]) , a:not([data-no-swup])",
+      'a[href]:not([href^="#"]):not([href^="mailto"]):not([target="_blank"]):not([href^="http"]):not([data-no-swup])',
+    // linkSelector:
+    //   ".sb-navigation a:not([data-no-swup]) , a:not([data-no-swup])",
   };
   const swup = new Swup(options);
   /***************************
