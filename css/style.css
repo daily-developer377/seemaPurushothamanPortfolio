@@ -230,7 +230,8 @@ h6 {
 .sb-h1,
 h1 {
   line-height: 100%;
-  font-size: 72px;
+  /* font-size: 72px; */
+  font-size: 60px;
   letter-spacing: -3px;
 }
 .sb-h1 span,
@@ -1357,7 +1358,8 @@ top bar
 .sb-top-bar-frame .sb-top-bar {
   padding: 0 15px;
   position: relative;
-  height: 120px;
+  /* height: 120px; */
+  height: 90px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -1478,10 +1480,10 @@ nav .sb-navigation li ul {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   transition: 0.3s ease-in-out;
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1pr);
   grid-template-rows: repeat(4, auto);
-  grid-auto-flow: column;
+  grid-auto-flow: column; */
 }
 nav .sb-navigation li ul li {
   display: block;
@@ -2031,7 +2033,8 @@ call to action
 ***************************/
 .sb-call-to-action {
   position: relative;
-  padding: 30px 0;
+  /* padding: 30px 0; */
+  padding: 90px 0;
 }
 
 .sb-download-btn {
