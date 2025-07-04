@@ -161,14 +161,7 @@
   font-size: 1.25rem;
   font-weight: 600;
   color: #2d3748;
-  margin-bottom: 1rem;
   line-height: 1.4;
-}
-
-.course-description {
-  color: #718096;
-  line-height: 1.6;
-  font-size: 0.95rem;
 }
 
 .course-icon {
@@ -194,40 +187,6 @@
   box-shadow: 0 6px 12px rgba(245, 195, 50, 0.4);
 }
 
-.stats-section {
-  background: #f9fafc;
-  border-radius: 16px;
-  padding: 2rem;
-  margin-top: 3rem;
-  border: 1px solid #e2e8f0;
-  text-align: center;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.stat-item {
-  padding: 1rem;
-}
-
-.stat-number {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #f5c332;
-  margin-bottom: 0.5rem;
-}
-
-.stat-label {
-  color: #718096;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
 @media (max-width: 768px) {
   .courses-grid {
     grid-template-columns: 1fr;
@@ -240,10 +199,6 @@
 
   .course-card {
     padding: 1.5rem;
-  }
-
-  body {
-    padding: 1rem;
   }
 }
 
