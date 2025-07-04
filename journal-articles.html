@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- color of address bar in mobile browser -->
+    <meta name="theme-color" content="#F5C332" />
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="img/ui/logo.ico" type="image/x-icon" />
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/plugins/bootstrap.min.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/plugins/swiper.min.css" />
+    <!-- datepicker css -->
+    <link rel="stylesheet" href="css/plugins/datepicker.css" />
+    <!-- mapbox css -->
+    <link href="css/plugins/mapbox-style.css" rel="stylesheet" />
+    <!-- fancybox css -->
+    <link rel="stylesheet" href="css/plugins/fancybox.min.css" />
+    <!-- starbelly css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="cstm-styles.css" />
+    <link rel="stylesheet" href="cstm-responsive.css" />
+    <!-- page title -->
+    <title>Starbelly</title>
+  </head>
+
+  <body>
+    <!-- app wrapper -->
+    <div class="sb-app">
+      <!-- preloader -->
+      <!-- <div class="sb-preloader">
+        <div class="sb-preloader-bg"></div>
+        <div class="sb-preloader-body">
+          <div class="sb-loading">
+            <div class="sb-percent">
+              <span class="sb-preloader-number" data-count="101">00</span
+              ><span>%</span>
+            </div>
+          </div>
+          <div class="sb-loading-bar">
+            <div class="sb-bar"></div>
+          </div>
+        </div>
+      </div> -->
+      <!-- preloader end -->
+      <!-- click effect -->
+      <div class="sb-click-effect"></div>
+      <!-- loader -->
+      <div class="sb-load"></div>
+      <!-- top bar -->
+      <div class="sb-top-bar-frame">
+        <div class="sb-top-bar-bg"></div>
+        <div class="container">
+          <div class="sb-top-bar">
+            <a href="./" class="sb-logo-frame">
+              <!-- logo img -->
+              <p class="mb-0">Seema Purushothaman</p>
+              <!-- <img src="img/ui/logo.svg" alt="Starbelly" /> -->
+            </a>
+            <!-- menu -->
+            <div class="sb-right-side">
+              <nav id="sb-dynamic-menu" class="sb-menu-transition">
+                <ul class="sb-navigation">
+                  <li class="">
+                    <a href="./">Home</a>
+                  </li>
+                  <li class="sb-has-children">
+                    <a href=""> Publications</a>
+                    <ul>
+                      <li><a href="books.html">Books</a></li>
+                      <li><a href="">Journal Articles</a></li>
+                      <li><a href="">Working Papers and Policy Briefs</a></li>
+                      <li><a href="">Chapters</a></li>
+                      <li>
+                        <a href="">Selected Articles from Popular Media</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sb-has-children">
+                    <a href=""> Gallery</a>
+                    <ul>
+                      <li><a href="">Images</a></li>
+                      <li><a href="video-gallery.html">Videos</a></li>
+                    </ul>
+                  </li>
+                  <li class="">
+                    <a href="">Biographical Sketch</a>
+                  </li>
+                  <li class="">
+                    <a href="assets/resume/resume.pdf" target="_blank"
+                      >Resume</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      href="https://smallfarmdynamics.wordpress.com/"
+                      target="_blank"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="#contact">Contact</a>
+                  </li>
+                  <!-- <li class="">
+                    <a href="">Blog</a>
+                  </li> -->
+                </ul>
+              </nav>
+              <div class="sb-buttons-frame">
+                <!-- menu btn -->
+                <div class="sb-menu-btn"><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- top bar end -->
+
+      <div id="sb-dynamic-content" class="sb-transition-fade">
+        <!-- banner -->
+        <section class="sb-banner sb-banner-xs sb-banner-color">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <!-- main title -->
+                <div class="sb-main-title-frame">
+                  <div class="sb-main-title">
+                    <h1 class="sb-h2">Video Gallery</h1>
+                    <ul class="sb-breadcrumbs">
+                      <li><a href="./">Home</a></li>
+                      <li><a href="#.">Video Gallery</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- main title end -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- banner end -->
+
+        <section class="articles-section">
+          <div class="section-header">
+            <h2 class="section-title">
+              <div class="section-icon">📰</div>
+              Journal Articles
+            </h2>
+            <p class="section-subtitle">
+              Peer-reviewed research publications spanning three decades of
+              interdisciplinary scholarship in sustainability, ecology, and
+              agricultural economics.
+            </p>
+          </div>
+<!-- 
+          <div class="stats-bar">
+            <div class="stat-item">
+              <div class="stat-number">27</div>
+              <div class="stat-label">Total Articles</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">30</div>
+              <div class="stat-label">Years</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">15</div>
+              <div class="stat-label">Journals</div>
+            </div>
+          </div> -->
+
+          <!-- <div class="filter-controls">
+            <button class="filter-btn active" data-decade="all">
+              All Years
+            </button>
+            <button class="filter-btn" data-decade="2020s">2020s</button>
+            <button class="filter-btn" data-decade="2010s">2010s</button>
+            <button class="filter-btn" data-decade="2000s">2000s</button>
+            <button class="filter-btn" data-decade="1990s">1990s</button>
+          </div> -->
+
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search articles by title, journal, or keywords..."
+            />
+          </div>
+
+          <div class="articles-grid">
+            <div class="article-card" data-year="2022">
+              <div class="article-header">
+                <div class="article-year">2022</div>
+              </div>
+              <h3 class="article-title">
+                Interdisciplinary and transdisciplinary scholarship for a
+                civilisation in distress: Questions for and from the Global
+                South
+              </h3>
+              <p class="article-authors">Bursztyn, M., & Purushothaman, S.</p>
+              <p class="article-journal">Global Social Challenges Journal</p>
+              <p class="article-details">1(1), 94 – 114</p>
+              <a
+                href="https://doi.org/10.1332/LBEQ6699"
+                class="article-link"
+                target="_blank"
+                >View Article</a
+              >
+            </div>
+
+            <div class="article-card" data-year="2022">
+              <div class="article-header">
+                <div class="article-year">2022</div>
+              </div>
+              <h3 class="article-title">
+                Agroecological Impacts of Urban Demand for Fresh Vegetables:
+                Preliminary Insights from Exploratory Surveys in Bengaluru
+              </h3>
+              <p class="article-authors">
+                Purushothaman, Sadashiva and Dhanush
+              </p>
+              <p class="article-journal">
+                Ecology, Economy and Society – the INSEE Journal
+              </p>
+              <p class="article-details">5(2): 107 – 117</p>
+            </div>
+
+            <div class="article-card" data-year="2019">
+              <div class="article-header">
+                <div class="article-year">2019</div>
+              </div>
+              <h3 class="article-title">
+                Sustainability: challenges in teaching
+              </h3>
+              <p class="article-authors">Purushothaman, S.</p>
+              <p class="article-journal">
+                Ecology, Economy and Society – the INSEE journal
+              </p>
+              <p class="article-details">2(2), 33 – 36</p>
+              <a
+                href="https://doi.org/10.37773/ees.v2i2.73"
+                class="article-link"
+                target="_blank"
+                >View Article</a
+              >
+              <span class="pdf-indicator">PDF</span>
+            </div>
+
+            <div class="article-card" data-year="2019">
+              <div class="article-header">
+                <div class="article-year">2019</div>
+              </div>
+              <h3 class="article-title">
+                The science and economics of family farms
+              </h3>
+              <p class="article-authors">Purushothaman, S.</p>
+              <p class="article-journal">Current Science (Guest editorial)</p>
+              <p class="article-details">117(11), 1763 – 1764</p>
+              <span class="pdf-indicator">PDF</span>
+            </div>
+
+            <div class="article-card" data-year="2018">
+              <div class="article-header">
+                <div class="article-year">2018</div>
+              </div>
+              <h3 class="article-title">
+                Urbanisation and New Agroecologies — The story of Bengaluru's
+                Peripheries
+              </h3>
+              <p class="article-authors">
+                Patil, S., Dhanya, B., Vanjari, R S., & Purushothaman, S.
+              </p>
+              <p class="article-journal">Economic and Political Weekly</p>
+              <p class="article-details">53(41), 71 – 77</p>
+              <span class="pdf-indicator">PDF</span>
+            </div>
+
+            <div class="article-card" data-year="2017">
+              <div class="article-header">
+                <div class="article-year">2017</div>
+              </div>
+              <h3 class="article-title">
+                Regional Economies and Small Farmers in Karnataka
+              </h3>
+              <p class="article-authors">Purushothaman, S., & Patil, S.</p>
+              <p class="article-journal">Economic and Political Weekly</p>
+              <p class="article-details">52(46), 78 – 84</p>
+              <span class="pdf-indicator">PDF</span>
+            </div>
+
+            <div class="article-card" data-year="2016">
+              <div class="article-header">
+                <div class="article-year">2016</div>
+              </div>
+              <h3 class="article-title">
+                Sustainability in Higher Education for the Global South: A
+                Conversation across Geographies and Disciplines
+              </h3>
+              <p class="article-authors">Purushothaman, S., et al</p>
+              <p class="article-journal">Sustainability in Debate</p>
+              <p class="article-details">7(1), 156 –173</p>
+              <span class="pdf-indicator">PDF</span>
+            </div>
+
+            <div class="article-card" data-year="2014">
+              <div class="article-header">
+                <div class="article-year">2014</div>
+              </div>
+              <h3 class="article-title">
+                Ecosystem services of native trees: experience from two
+                traditional agroforestry systems in Karnataka, Southern India
+              </h3>
+              <p class="article-authors">
+                Dhanya, B., Satish, B.N., Viswanath, S., & Purushothaman, S.
+              </p>
+              <p class="article-journal">
+                International Journal of Biodiversity Science, Ecosystem
+                Services and Management
+              </p>
+              <p class="article-details">10(2), 101 – 111</p>
+            </div>
+
+            <div class="article-card" data-year="2013">
+              <div class="article-header">
+                <div class="article-year">2013</div>
+              </div>
+              <h3 class="article-title">
+                Policy and Governance for sustaining livelihoods and natural
+                resources in small farms — a case study in Karnataka
+              </h3>
+              <p class="article-authors">
+                Purushothaman, S., Patil, S., Francis, I., Patil, I., & Nesheim,
+                I.
+              </p>
+              <p class="article-journal">
+                Indian Journal of Agricultural Economics
+              </p>
+              <p class="article-details">68(2), 240 – 257</p>
+              <span class="pdf-indicator">PDF</span>
+            </div>
+
+            <div class="article-card" data-year="2013">
+              <div class="article-header">
+                <div class="article-year">2013</div>
+              </div>
+              <h3 class="article-title">
+                Beyond money metrics: Alternative approaches to conceptualising
+                and assessing ecosystem services
+              </h3>
+              <p class="article-authors">
+                Purushothaman, S., Thomas, B.K., Abraham, R., & Dhar, U.
+              </p>
+              <p class="article-journal">
+                Conservation and Society (Guest editorial to the INSEE special
+                section)
+              </p>
+              <p class="article-details">11(4), 321 – 325</p>
+              <span class="pdf-indicator">PDF</span>
+            </div>
+
+            <div class="article-card" data-year="2013">
+              <div class="article-header">
+                <div class="article-year">2013</div>
+              </div>
+              <h3 class="article-title">
+                Regional impact assessment of land use scenarios in developing
+                countries using the FoPIA approach: Findings from five case
+                studies
+              </h3>
+              <p class="article-authors">
+                Konig, H.J., Uthes, S., Schuler, J., Zhen, L., Purushothaman,
+                S., et al.
+              </p>
+              <p class="article-journal">Journal of Environmental Management</p>
+              <p class="article-details">127(Suppl.), S56 – S64</p>
+            </div>
+
+            <div class="article-card" data-year="2013">
+              <div class="article-header">
+                <div class="article-year">2013</div>
+              </div>
+              <h3 class="article-title">
+                Crop yield reduction in Ficus agroforestry systems of Karnataka,
+                southern India: Perceptions and realities
+              </h3>
+              <p class="article-authors">
+                Dhanya, B., Viswanath, S. & Purushothaman, S.
+              </p>
+              <p class="article-journal">
+                Agroecology and Sustainable Food Systems
+              </p>
+              <p class="article-details">37(6), 727 – 735</p>
+            </div>
+
+            <div class="article-card" data-year="2012">
+              <div class="article-header">
+                <div class="article-year">2012</div>
+              </div>
+              <h3 class="article-title">
+                Ficus trees in rainfed agricultural systems of Karnataka,
+                southern India: An analysis of structure, benefits, and farmers'
+                perceptions
+              </h3>
+              <p class="article-authors">
+                Dhanya, B., Viswanath, S., & Purushothaman, S.
+              </p>
+              <p class="article-journal">Journal of Tropical Agriculture</p>
+              <p class="article-details">50(1 – 2), 59 – 62</p>
+            </div>
+
+            <div class="article-card" data-year="2012">
+              <div class="article-header">
+                <div class="article-year">2012</div>
+              </div>
+              <h3 class="article-title">
+                Assessing the impact of policy-driven agricultural practices in
+                Karnataka, India
+              </h3>
+              <p class="article-authors">
+                Purushothaman, S., Patil, S., & Francis, I.
+              </p>
+              <p class="article-journal">Sustainability Science</p>
+              <p class="article-details">8(2), 173 – 185</p>
+            </div>
+
+            <div class="article-card" data-year="2012">
+              <div class="article-header">
+                <div class="article-year">2012</div>
+              </div>
+              <h3 class="article-title">
+                Participatory impact assessment of agricultural practices using
+                the land use functions framework: case study from India
+              </h3>
+              <p class="article-authors">
+                Purushothaman, S., Patil, S., Francis, I., Konig, H.J., Reidsma,
+                P., & Hegde, S.
+              </p>
+              <p class="article-journal">
+                International Journal of Biodiversity Science, Ecosystem
+                Services & Management
+              </p>
+              <p class="article-details">9(1), 2 – 12</p>
+            </div>
+
+            <div class="article-card" data-year="2012">
+              <div class="article-header">
+                <div class="article-year">2012</div>
+              </div>
+              <h3 class="article-title">
+                Impact of policies favouring organic inputs on small farms in
+                Karnataka, India: a multicriteria approach
+              </h3>
+              <p class="article-authors">
+                Purushothaman, S., Patil, S., & Francis, I.
+              </p>
+              <p class="article-journal">
+                Environment, Development and Sustainability
+              </p>
+              <p class="article-details">14(4), 507 – 527</p>
+            </div>
+
+            <div class="article-card" data-year="2012">
+              <div class="article-header">
+                <div class="article-year">2012</div>
+              </div>
+              <h3 class="article-title">
+                Comparing conventional and organic agriculture in Karnataka,
+                India: Where and when can organic farming be sustainable?
+              </h3>
+              <p class="article-authors">Patil, S., et al.</p>
+              <p class="article-journal">Land Use Policy</p>
+              <p class="article-details">37, 40 – 51</p>
+            </div>
+
+            <div class="article-card" data-year="2011">
+              <div class="article-header">
+                <div class="article-year">2011</div>
+              </div>
+              <h3 class="article-title">
+                Scaling up and Sustainability: the experience from rural India
+              </h3>
+              <p class="article-authors">Purushothaman, S., & Abraham, R.</p>
+              <p class="article-journal">Sustainability in Debate</p>
+              <p class="article-details">2(2), 21 – 42</p>
+              <span class="pdf-indicator">PDF</span>
+            </div>
+
+            <div class="article-card" data-year="2011">
+              <div class="article-header">
+                <div class="article-year">2011</div>
+              </div>
+              <h3 class="article-title">
+                Methods and tools for integrated assessment of land use policies
+                on sustainable development in developing countries
+              </h3>
+              <p class="article-authors">
+                Reidsma, P., Konig, H., Feng, S., Bezlepkina, I., Nesheim, I.,
+                Bonin, M., Sghaier, M., Purushothaman, S., et al.
+              </p>
+              <p class="article-journal">Land Use Policy</p>
+              <p class="article-details">28(3), 604 – 617</p>
+            </div>
+
+            <div class="article-card" data-year="2010">
+              <div class="article-header">
+                <div class="article-year">2010</div>
+              </div>
+              <h3 class="article-title">
+                Financial viability of sandal based agroforestry practices in
+                southern India
+              </h3>
+              <p class="article-authors">
+                Viswanath, S., Dhanya, B., Purushothaman, S., & Rathore, S.
+              </p>
+              <p class="article-journal">Indian Journal of Agroforestry</p>
+              <p class="article-details">12(2), 14 – 22</p>
+              <span class="pdf-indicator">PDF</span>
+            </div>
+
+            <div class="article-card" data-year="2010">
+              <div class="article-header">
+                <div class="article-year">2010</div>
+              </div>
+              <h3 class="article-title">
+                Sandal (Santalum album L.) conservation in southern India: A
+                review of policies and their impacts
+              </h3>
+              <p class="article-authors">
+                Dhanya, B. Viswanath, S & Purushothaman, S.
+              </p>
+              <p class="article-journal">Journal of Tropical Agriculture</p>
+              <p class="article-details">48(1−2), 1 – 10</p>
+            </div>
+
+            <div class="article-card" data-year="2010">
+              <div class="article-header">
+                <div class="article-year">2010</div>
+              </div>
+              <h3 class="article-title">
+                Trends in land use and crop acreages in Karnataka and their
+                repercussions
+              </h3>
+              <p class="article-authors">Purushothaman, S & Kashyap, S.</p>
+              <p class="article-journal">
+                Karnataka Journal of Agricultural Sciences
+              </p>
+              <p class="article-details">23(2), 330 – 333</p>
+              <span class="pdf-indicator">PDF</span>
+            </div>
+
+            <div class="article-card" data-year="2009">
+              <div class="article-header">
+                <div class="article-year">2009</div>
+              </div>
+              <h3 class="article-title">
+                People's perception on benefits from a protected catchment: A
+                case study of Gundal command in Karnataka
+              </h3>
+              <p class="article-authors">
+                Purushothaman, S., Hegde, S. S., Patil, S., & Kashyap, S.
+              </p>
+              <p class="article-journal">
+                Indian Journal of Agricultural Economics
+              </p>
+              <p class="article-details">64(4), 573 – 584</p>
+              <span class="pdf-indicator">PDF</span>
+            </div>
+
+            <div class="article-card" data-year="2005">
+              <div class="article-header">
+                <div class="article-year">2005</div>
+              </div>
+              <h3 class="article-title">
+                Land-use Strategies for Tribals: A Socio Economic Analysis
+              </h3>
+              <p class="article-authors">Purushothaman, S.</p>
+              <p class="article-journal">Economic and Political Weekly</p>
+              <p class="article-details">40(53), 5611 – 5619</p>
+              <span class="pdf-indicator">PDF</span>
+            </div>
+
+            <div class="article-card" data-year="2000">
+              <div class="article-header">
+                <div class="article-year">2000</div>
+              </div>
+              <h3 class="article-title">
+                Forest Conservation, Tourism and Extraction: An Economic
+                Perspective
+              </h3>
+              <p class="article-authors">
+                Swaminathan, L.P., & Purushothaman, S.
+              </p>
+              <p class="article-journal">
+                Indian Journal of Agricultural Economics
+              </p>
+              <p class="article-details">55(3), 398– 411</p>
+              <span class="pdf-indicator">PDF</span>
+            </div>
+
+            <div class="article-card" data-year="2000">
+              <div class="article-header">
+                <div class="article-year">2000</div>
+              </div>
+              <h3 class="article-title">
+                Economic valuation of extractive conservation in a tropical
+                deciduous forest in Madhya Pradesh, India
+              </h3>
+              <p class="article-authors">
+                Purushothaman, S., Viswanath, S., & Kunhikkannan, C.
+              </p>
+              <p class="article-journal">Tropical Ecology</p>
+              <p class="article-details">41(1), 61– 72</p>
+            </div>
+
+            <div class="article-card" data-year="1997">
+              <div class="article-header">
+                <div class="article-year">1997</div>
+              </div>
+              <h3 class="article-title">
+                Economic impact of cement kiln dust on rural agriculture
+              </h3>
+              <p class="article-authors">
+                Purushothaman, S., Viswanath, S., & Mukundan, K.
+              </p>
+              <p class="article-journal">
+                Indian Journal of Agricultural Economics
+              </p>
+              <p class="article-details">51(3), 407 – 411</p>
+            </div>
+
+            <div class="article-card" data-year="1993">
+              <div class="article-header">
+                <div class="article-year">1993</div>
+              </div>
+              <h3 class="article-title">
+                Protecting biological diversity: An operational model to compare
+                and contrast
+              </h3>
+              <p class="article-authors">Purushothaman, S., & Viswanath, S.</p>
+              <p class="article-journal">
+                Indian Journal of Tropical Biodiversity
+              </p>
+              <p class="article-details">1(2), 161 – 166</p>
+            </div>
+          </div>
+        </section>
+
+        <!--  -->
+        <!-- footer -->
+        <footer>
+          <div class="container">
+            <div class="sb-footer-frame">
+              <a href="./" class="sb-logo-frame">
+                <!-- logo img -->
+                <p class="mb-0">Seema Purushothaman</p>
+                <!-- <img src="img/ui/logo.svg" alt="Starbelly" /> -->
+              </a>
+              <ul class="sb-social">
+                <!-- <li>
+                  <a href="#."><i class="fab fa-twitter"></i></a>
+                </li> -->
+                <li>
+                  <a href="#."><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#."><i class="fab fa-facebook-f"></i></a>
+                </li>
+              </ul>
+              <div class="sb-copy">
+                &copy;
+                <script>
+                  document.write(/\d{4}/.exec(Date())[0]);
+                </script>
+                Seema Purushothaman. All Rights Reserved.
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- footer end -->
+      </div>
+      <!-- dynamic content end -->
+    </div>
+    <!-- app wrapper end -->
+
+    <!-- jquery js -->
+    <script src="js/plugins/jquery.min.js"></script>
+    <!-- smooth scroll js -->
+    <script src="js/plugins/smooth-scroll.js"></script>
+    <!-- swup js -->
+    <script src="js/plugins/swup.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/plugins/swiper.min.js"></script>
+    <!-- datepicker js -->
+    <script src="js/plugins/datepicker.js"></script>
+    <!-- isotope js -->
+    <script src="js/plugins/isotope.js"></script>
+    <!-- sticky -->
+    <script src="js/plugins/sticky.js"></script>
+    <!-- mapbox js -->
+    <script src="js/plugins/mapbox.min.js"></script>
+    <!-- fancybox js -->
+    <script src="js/plugins/fancybox.min.js"></script>
+    <!-- starbelly js -->
+    <script src="js/main.js"></script>
+
+    <script>
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const articleCards = document.querySelectorAll(".article-card");
+      const searchInput = document.querySelector(".search-input");
+
+      // Function to filter articles by decade
+      function filterArticles(decade) {
+        articleCards.forEach((card) => {
+          const year = parseInt(card.dataset.year);
+          let show = false;
+
+          if (decade === "all") {
+            show = true;
+          } else if (decade === "2020s" && year >= 2020 && year < 2030) {
+            show = true;
+          } else if (decade === "2010s" && year >= 2010 && year < 2020) {
+            show = true;
+          } else if (decade === "2000s" && year >= 2000 && year < 2010) {
+            show = true;
+          } else if (decade === "1990s" && year >= 1990 && year < 2000) {
+            show = true;
+          }
+
+          // Also apply search filter on top of decade filter
+          const matchesSearch = card.textContent
+            .toLowerCase()
+            .includes(searchInput.value.toLowerCase());
+          card.style.display = show && matchesSearch ? "block" : "none";
+        });
+      }
+
+      // Click event for decade filter buttons
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          filterBtns.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          filterArticles(btn.dataset.decade);
+        });
+      });
+
+      // Live search filtering
+      searchInput.addEventListener("input", () => {
+        const activeBtn = document.querySelector(".filter-btn.active");
+        const decade = activeBtn ? activeBtn.dataset.decade : "all";
+        filterArticles(decade);
+      });
+
+      // Initial filtering on page load (to make sure it respects default "All Years")
+      filterArticles("all");
+    </script>
+
+    <!--  -->
+    <script>
+      document.addEventListener("click", function (e) {
+        const el = document.elementFromPoint(e.clientX, e.clientY);
+        console.log("Clicked element is:", el);
+      });
+      //
+      // document
+      //   .querySelector(".ctaBtnIndex")
+      //   .addEventListener("click", function (e) {
+      //     console.log("Link clicked — manually opening!");
+      //     window.open(this.href, "_blank"); // force open in new tab
+      //   });
+    </script>
+    <!--  -->
+  </body>
+</html>
