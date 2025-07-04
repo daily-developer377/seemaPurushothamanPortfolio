@@ -47,3 +47,17 @@
   padding: 1rem !important;
   /* text-align: center; */
 }
+
+/* video gallery */
+.videoGalleryContainer {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.videoGallerySection {
+  background: #e9eaed;
+}
+.videoGalleryIframe {
+  margin-bottom: 1rem;
+}
+/* end video gallery */
