@@ -240,3 +240,231 @@
 }
 
 /* end course taught section */
+
+/* books page styles */
+
+/* .publications-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 0;
+} */
+.booksSection {
+  background: #e9eaed;
+  padding: 4rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.section-header::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #f5c332, #f5c332aa);
+  border-radius: 2px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #718096;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.category-section {
+  margin-bottom: 3rem;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.category-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #f5c332, #f5c332cc);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(245, 195, 50, 0.3);
+}
+
+.category-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2d3748;
+  letter-spacing: -0.3px;
+}
+
+.publication-card {
+  background: #f9fafc;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.publication-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #f5c332, #f5c332cc);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.publication-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.15);
+}
+
+.publication-card:hover::before {
+  transform: scaleX(1);
+}
+
+.publication-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.publication-authors {
+  color: #4a5568;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.publication-details {
+  color: #718096;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.publication-year {
+  display: inline-block;
+  background: #f5c332;
+  color: #2d3748;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.publication-link {
+  color: #f5c332;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  word-break: break-all;
+  font-size: 0.9rem;
+}
+
+.publication-link:hover {
+  color: #e2b029;
+  text-decoration: underline;
+}
+
+.malayalam-text {
+  font-family: "Noto Sans Malayalam", "Manjari", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.handbook-note {
+  background: #fff3cd;
+  border-left: 4px solid #f5c332;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.9rem;
+  color: #856404;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .category-title {
+    font-size: 1.5rem;
+  }
+
+  .publication-card {
+    padding: 1.5rem;
+  }
+
+  .category-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .category-icon {
+    margin-right: 0;
+  }
+
+  body {
+    padding: 1rem;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.category-section {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.category-section:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.category-section:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.category-section:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+/* end books page styles */
