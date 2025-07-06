@@ -239,8 +239,13 @@ h1 span {
   background-color: #f9fafc;
 }
 
-.sb-h2,
+/* .sb-h2,
 h2 {
+  line-height: 110%;
+  font-size: 40px;
+  letter-spacing: -2px;
+} */
+.sb-h2 {
   line-height: 110%;
   font-size: 40px;
   letter-spacing: -2px;
