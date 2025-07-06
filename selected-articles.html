@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- color of address bar in mobile browser -->
+    <meta name="theme-color" content="#F5C332" />
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="img/ui/logo.ico" type="image/x-icon" />
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/plugins/bootstrap.min.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/plugins/swiper.min.css" />
+    <!-- datepicker css -->
+    <link rel="stylesheet" href="css/plugins/datepicker.css" />
+    <!-- mapbox css -->
+    <link href="css/plugins/mapbox-style.css" rel="stylesheet" />
+    <!-- fancybox css -->
+    <link rel="stylesheet" href="css/plugins/fancybox.min.css" />
+    <!-- starbelly css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="cstm-styles.css" />
+    <link rel="stylesheet" href="cstm-responsive.css" />
+    <!-- page title -->
+    <title>Starbelly</title>
+  </head>
+
+  <body>
+    <!-- app wrapper -->
+    <div class="sb-app">
+      <!-- preloader -->
+      <!-- <div class="sb-preloader">
+        <div class="sb-preloader-bg"></div>
+        <div class="sb-preloader-body">
+          <div class="sb-loading">
+            <div class="sb-percent">
+              <span class="sb-preloader-number" data-count="101">00</span
+              ><span>%</span>
+            </div>
+          </div>
+          <div class="sb-loading-bar">
+            <div class="sb-bar"></div>
+          </div>
+        </div>
+      </div> -->
+      <!-- preloader end -->
+      <!-- click effect -->
+      <div class="sb-click-effect"></div>
+      <!-- loader -->
+      <div class="sb-load"></div>
+      <!-- top bar -->
+      <div class="sb-top-bar-frame">
+        <div class="sb-top-bar-bg"></div>
+        <div class="container">
+          <div class="sb-top-bar">
+            <a href="./" class="sb-logo-frame">
+              <!-- logo img -->
+              <p class="mb-0">Seema Purushothaman</p>
+              <!-- <img src="img/ui/logo.svg" alt="Starbelly" /> -->
+            </a>
+            <!-- menu -->
+            <div class="sb-right-side">
+              <nav id="sb-dynamic-menu" class="sb-menu-transition">
+                <ul class="sb-navigation">
+                  <li class="">
+                    <a href="./">Home</a>
+                  </li>
+                  <li class="sb-has-children">
+                    <a href=""> Publications</a>
+                    <ul>
+                      <li><a href="books.html">Books</a></li>
+                      <li><a href="journal-articles.html">Journal Articles</a></li>
+                      <li><a href="">Working Papers and Policy Briefs</a></li>
+                      <li><a href="">Chapters</a></li>
+                      <li>
+                        <a href="selected-articles.html">Selected Articles from Popular Media</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sb-has-children">
+                    <a href=""> Gallery</a>
+                    <ul>
+                      <li><a href="">Images</a></li>
+                      <li><a href="video-gallery.html">Videos</a></li>
+                    </ul>
+                  </li>
+                  <li class="">
+                    <a href="">Biographical Sketch</a>
+                  </li>
+                  <li class="">
+                    <a href="assets/resume/resume.pdf" target="_blank"
+                      >Resume</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      href="https://smallfarmdynamics.wordpress.com/"
+                      target="_blank"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="#contact">Contact</a>
+                  </li>
+                  <!-- <li class="">
+                    <a href="">Blog</a>
+                  </li> -->
+                </ul>
+              </nav>
+              <div class="sb-buttons-frame">
+                <!-- menu btn -->
+                <div class="sb-menu-btn"><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- top bar end -->
+
+      <div id="sb-dynamic-content" class="sb-transition-fade">
+        <!-- banner -->
+        <section class="sb-banner sb-banner-xs sb-banner-color bannerSectionCstm">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <!-- main title -->
+                <div class="sb-main-title-frame">
+                  <div class="sb-main-title">
+                    <h1 class="sb-h2">Selected Articles</h1>
+                    <ul class="sb-breadcrumbs">
+                      <li><a href="./">Home</a></li>
+                      <li><a href="#.">Selected Articles from Periodicals and Media</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- main title end -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- banner end -->
+
+        <!--  -->
+
+        <section class="publications-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center mb-5">
+                <h2 class="section-title">
+                  Selected Articles from Periodicals and Media
+                </h2>
+                <p class="section-subtitle">
+                  A collection of research publications and media contributions
+                  spanning agriculture, environment, and sustainable development
+                </p>
+              </div>
+            </div>
+
+            <!-- Statistics Overview -->
+            <!-- <div class="row mb-5">
+              <div class="col-12">
+                <div class="stats-container">
+                  <div class="row">
+                    <div class="col-md-3 col-6">
+                      <div class="stat-item">
+                        <span class="stat-number">15</span>
+                        <div class="stat-label">Publications</div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                      <div class="stat-item">
+                        <span class="stat-number">16</span>
+                        <div class="stat-label">Years Active</div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                      <div class="stat-item">
+                        <span class="stat-number">12</span>
+                        <div class="stat-label">Journals</div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                      <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <div class="stat-label">Co-authors</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- Filter Tabs -->
+            <!-- <div class="row mb-4">
+              <div class="col-12">
+                <div class="filter-tabs">
+                  <a href="#" class="filter-tab active" data-filter="all"
+                    >All Publications</a
+                  >
+                  <a href="#" class="filter-tab" data-filter="2024">2024</a>
+                  <a href="#" class="filter-tab" data-filter="2020">2020</a>
+                  <a href="#" class="filter-tab" data-filter="2010">2010</a>
+                  <a href="#" class="filter-tab" data-filter="agriculture"
+                    >Agriculture</a
+                  >
+                  <a href="#" class="filter-tab" data-filter="environment"
+                    >Environment</a
+                  >
+                </div>
+              </div>
+            </div> -->
+
+            <!-- Publications Grid -->
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="publication-card"
+                  data-year="2024"
+                  data-category="environment"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-3"
+                  >
+                    <div class="publication-title">
+                      City's green thumbs? Exploring footprint of plant
+                      nurseries around Bengaluru
+                    </div>
+                    <span class="year-badge">2024</span>
+                  </div>
+                  <div class="publication-meta">
+                    <div class="meta-item">
+                      <i class="fas fa-users"></i>
+                      <span>Raj, S. & Purushothaman, S.</span>
+                    </div>
+                    <div class="meta-item">
+                      <i class="fas fa-calendar"></i>
+                      <span>May 13, 2024</span>
+                    </div>
+                  </div>
+                  <div class="publication-journal mb-3">Down To Earth</div>
+                  <a
+                    href="https://www.downtoearth.org.in/blog/environment/city-s-green-thumbs-exploring-footprint-of-plant-nurseries-around-bengaluru-96127"
+                    class="publication-link"
+                    target="_blank"
+                  >
+                    View Article <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+
+                <div
+                  class="publication-card"
+                  data-year="2024"
+                  data-category="agriculture"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-3"
+                  >
+                    <div class="publication-title">
+                      Exploring urban perceptions around freshness of vegetables
+                    </div>
+                    <span class="year-badge">2024</span>
+                  </div>
+                  <div class="publication-meta">
+                    <div class="meta-item">
+                      <i class="fas fa-users"></i>
+                      <span>Raj, A.V., Purushothaman, S., & Sadashiva, V.</span>
+                    </div>
+                    <div class="meta-item">
+                      <i class="fas fa-calendar"></i>
+                      <span>February 24, 2024</span>
+                    </div>
+                  </div>
+                  <div class="publication-journal mb-3">Ideas for India</div>
+                  <a
+                    href="https://www.ideasforindia.in/topics/agriculture/exploring-urban-perceptions-around-freshness-of-vegetables.html"
+                    class="publication-link"
+                    target="_blank"
+                  >
+                    View Article <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+
+                <div
+                  class="publication-card"
+                  data-year="2024"
+                  data-category="environment"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-3"
+                  >
+                    <div class="publication-title">
+                      Complete and Effective Implementation of FRA in Kerala:
+                      Strategies and Approaches
+                    </div>
+                    <span class="year-badge">2024</span>
+                  </div>
+                  <div class="publication-meta">
+                    <div class="meta-item">
+                      <i class="fas fa-users"></i>
+                      <span>Purushothaman, S., & Devi, R.</span>
+                    </div>
+                    <div class="meta-item">
+                      <i class="fas fa-university"></i>
+                      <span>Azim Premji University</span>
+                    </div>
+                  </div>
+                  <div class="publication-journal mb-3">Practice Connect</div>
+                  <a
+                    href="https://practiceconnect.azimpremjiuniversity.edu.in/complete-and-effective-implementation-of-fra-in-kerala-strategies-and-approaches/"
+                    class="publication-link"
+                    target="_blank"
+                  >
+                    View Article <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+
+                <div
+                  class="publication-card"
+                  data-year="2020"
+                  data-category="agriculture"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-3"
+                  >
+                    <div class="publication-title">
+                      Resilience during the pandemic – lessons from the family
+                      farms of Yadgir
+                    </div>
+                    <span class="year-badge">2020</span>
+                  </div>
+                  <div class="publication-meta">
+                    <div class="meta-item">
+                      <i class="fas fa-users"></i>
+                      <span>Purushothaman, S., & Patil, S.</span>
+                    </div>
+                    <div class="meta-item">
+                      <i class="fas fa-calendar"></i>
+                      <span>August 17, 2020</span>
+                    </div>
+                  </div>
+                  <div class="publication-journal mb-3">The News Minute</div>
+                  <a
+                    href="https://www.thenewsminute.com/article/resilience-during-pandemic-lessons-family-farms-yadgir-130919"
+                    class="publication-link"
+                    target="_blank"
+                  >
+                    View Article <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+
+                <div
+                  class="publication-card"
+                  data-year="2020"
+                  data-category="agriculture"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-3"
+                  >
+                    <div class="publication-title">
+                      Tackling Covid: Overcoming pandemic despair
+                    </div>
+                    <span class="year-badge">2020</span>
+                  </div>
+                  <div class="publication-meta">
+                    <div class="meta-item">
+                      <i class="fas fa-users"></i>
+                      <span>Purushothaman, S., Singh, S., & Patil, S.</span>
+                    </div>
+                    <div class="meta-item">
+                      <i class="fas fa-calendar"></i>
+                      <span>September 5, 2020</span>
+                    </div>
+                  </div>
+                  <div class="publication-journal mb-3">Financial Express</div>
+                  <a
+                    href="https://www.financialexpress.com/opinion/tackling-covid-overcoming-pandemic-despair/2075285/"
+                    class="publication-link"
+                    target="_blank"
+                  >
+                    View Article <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+
+                <div
+                  class="publication-card"
+                  data-year="2020"
+                  data-category="education"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-3"
+                  >
+                    <div class="publication-title">
+                      What is the purpose of education?
+                    </div>
+                    <span class="year-badge">2020</span>
+                  </div>
+                  <div class="publication-meta">
+                    <div class="meta-item">
+                      <i class="fas fa-user"></i>
+                      <span>Purushothaman, S.</span>
+                    </div>
+                    <div class="meta-item">
+                      <i class="fas fa-calendar"></i>
+                      <span>September 26, 2020</span>
+                    </div>
+                  </div>
+                  <div class="publication-journal mb-3">Manorama Online</div>
+                  <a
+                    href="https://www.manoramaonline.com/education/horizon/2020/09/26/what-Is-the-purpose-of-education.html"
+                    class="publication-link"
+                    target="_blank"
+                  >
+                    View Article <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+
+                <div
+                  class="publication-card"
+                  data-year="2019"
+                  data-category="agriculture"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-3"
+                  >
+                    <div class="publication-title">
+                      Agriculture and Urbanisation in Karnataka (Karnatakadalli
+                      krushi mathu nagarikarana)
+                    </div>
+                    <span class="year-badge">2019</span>
+                  </div>
+                  <div class="publication-meta">
+                    <div class="meta-item">
+                      <i class="fas fa-users"></i>
+                      <span>Purushothaman, S., Patil, S., & Shwetha, A.R</span>
+                    </div>
+                    <div class="meta-item">
+                      <i class="fas fa-file-pdf"></i>
+                      <span>PDF Available</span>
+                    </div>
+                  </div>
+                  <div class="publication-journal mb-3">
+                    Yojana, 5(35), 29-33
+                  </div>
+                </div>
+
+                <div
+                  class="publication-card"
+                  data-year="2010"
+                  data-category="environment"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-3"
+                  >
+                    <div class="publication-title">
+                      Ficus trees as components of rainfed agrarian systems in
+                      Mandya district of Karnataka
+                    </div>
+                    <span class="year-badge">2010</span>
+                  </div>
+                  <div class="publication-meta">
+                    <div class="meta-item">
+                      <i class="fas fa-users"></i>
+                      <span
+                        >Dhanya, B., Viswanath, S., Purushothaman, S., &
+                        Suneeta, B.</span
+                      >
+                    </div>
+                    <div class="meta-item">
+                      <i class="fas fa-file-pdf"></i>
+                      <span>PDF Available</span>
+                    </div>
+                  </div>
+                  <div class="publication-journal mb-3">
+                    My Forest, 46(2), 161-165
+                  </div>
+                </div>
+
+                <div
+                  class="publication-card"
+                  data-year="2010"
+                  data-category="environment"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-3"
+                  >
+                    <div class="publication-title">
+                      Forest and farms- a thankless delink
+                    </div>
+                    <span class="year-badge">2010</span>
+                  </div>
+                  <div class="publication-meta">
+                    <div class="meta-item">
+                      <i class="fas fa-users"></i>
+                      <span>Purushothaman, S., & Hegde, S.</span>
+                    </div>
+                    <div class="meta-item">
+                      <i class="fas fa-calendar"></i>
+                      <span>February 2, 2010</span>
+                    </div>
+                  </div>
+                  <div class="publication-journal mb-3">
+                    Spectrum, Deccan Herald
+                  </div>
+                </div>
+
+                <div
+                  class="publication-card"
+                  data-year="2010"
+                  data-category="environment"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-3"
+                  >
+                    <div class="publication-title">Fringe benefits taxed</div>
+                    <span class="year-badge">2010</span>
+                  </div>
+                  <div class="publication-meta">
+                    <div class="meta-item">
+                      <i class="fas fa-user"></i>
+                      <span>Purushothaman, S.</span>
+                    </div>
+                    <div class="meta-item">
+                      <i class="fas fa-calendar"></i>
+                      <span>January 16, 2010</span>
+                    </div>
+                    <div class="meta-item">
+                      <i class="fas fa-file-pdf"></i>
+                      <span>PDF Available</span>
+                    </div>
+                  </div>
+                  <div class="publication-journal mb-3">
+                    Down to Earth, 18(17), 52-53
+                  </div>
+                </div>
+
+                <div
+                  class="publication-card"
+                  data-year="2010"
+                  data-category="environment"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-3"
+                  >
+                    <div class="publication-title">
+                      The tourist does leave a footprint
+                    </div>
+                    <span class="year-badge">2010</span>
+                  </div>
+                  <div class="publication-meta">
+                    <div class="meta-item">
+                      <i class="fas fa-users"></i>
+                      <span>Phalkey, N., & Purushothaman, S.</span>
+                    </div>
+                    <div class="meta-item">
+                      <i class="fas fa-calendar"></i>
+                      <span>February 15, 2010</span>
+                    </div>
+                  </div>
+                  <div class="publication-journal mb-3">Down to Earth</div>
+                </div>
+
+                <div
+                  class="publication-card"
+                  data-year="2008"
+                  data-category="environment"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-3"
+                  >
+                    <div class="publication-title">Value of Deforestation?</div>
+                    <span class="year-badge">2008</span>
+                  </div>
+                  <div class="publication-meta">
+                    <div class="meta-item">
+                      <i class="fas fa-users"></i>
+                      <span>Krishnan, S., & Purushothaman, S.</span>
+                    </div>
+                  </div>
+                  <div class="publication-journal mb-3">
+                    Down To Earth, 17(6), 52-53
+                  </div>
+                </div>
+
+                <div
+                  class="publication-card"
+                  data-year="2005"
+                  data-category="agriculture"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-3"
+                  >
+                    <div class="publication-title">
+                      Upland paddies, foliage hillocks and multi-storeyed
+                      horticulture: an ecologically sustainable agro-ecosystem
+                    </div>
+                    <span class="year-badge">2005</span>
+                  </div>
+                  <div class="publication-meta">
+                    <div class="meta-item">
+                      <i class="fas fa-users"></i>
+                      <span>Purushothaman, S., & Dharmarajan, P.</span>
+                    </div>
+                    <div class="meta-item">
+                      <i class="fas fa-building"></i>
+                      <span>FAO</span>
+                    </div>
+                  </div>
+                  <div class="publication-journal mb-3">APANews, 27(11-13)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--  -->
+
+        <!--  -->
+        <!-- footer -->
+        <footer>
+          <div class="container">
+            <div class="sb-footer-frame">
+              <a href="./" class="sb-logo-frame">
+                <!-- logo img -->
+                <p class="mb-0">Seema Purushothaman</p>
+                <!-- <img src="img/ui/logo.svg" alt="Starbelly" /> -->
+              </a>
+              <ul class="sb-social">
+                <!-- <li>
+                  <a href="#."><i class="fab fa-twitter"></i></a>
+                </li> -->
+                <li>
+                  <a href="#."><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#."><i class="fab fa-facebook-f"></i></a>
+                </li>
+              </ul>
+              <div class="sb-copy">
+                &copy;
+                <script>
+                  document.write(/\d{4}/.exec(Date())[0]);
+                </script>
+                Seema Purushothaman. All Rights Reserved.
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- footer end -->
+      </div>
+      <!-- dynamic content end -->
+    </div>
+    <!-- app wrapper end -->
+
+    <!-- jquery js -->
+    <script src="js/plugins/jquery.min.js"></script>
+    <!-- smooth scroll js -->
+    <script src="js/plugins/smooth-scroll.js"></script>
+    <!-- swup js -->
+    <script src="js/plugins/swup.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/plugins/swiper.min.js"></script>
+    <!-- datepicker js -->
+    <script src="js/plugins/datepicker.js"></script>
+    <!-- isotope js -->
+    <script src="js/plugins/isotope.js"></script>
+    <!-- sticky -->
+    <script src="js/plugins/sticky.js"></script>
+    <!-- mapbox js -->
+    <script src="js/plugins/mapbox.min.js"></script>
+    <!-- fancybox js -->
+    <script src="js/plugins/fancybox.min.js"></script>
+    <!-- starbelly js -->
+    <script src="js/main.js"></script>
+
+    <!-- <script>
+      // Filter functionality
+      document.querySelectorAll(".filter-tab").forEach((tab) => {
+        tab.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // Remove active class from all tabs
+          document
+            .querySelectorAll(".filter-tab")
+            .forEach((t) => t.classList.remove("active"));
+
+          // Add active class to clicked tab
+          this.classList.add("active");
+
+          const filter = this.dataset.filter;
+          const cards = document.querySelectorAll(".publication-card");
+
+          cards.forEach((card) => {
+            if (filter === "all") {
+              card.style.display = "block";
+            } else if (
+              filter === "agriculture" ||
+              filter === "environment" ||
+              filter === "education"
+            ) {
+              if (card.dataset.category === filter) {
+                card.style.display = "block";
+              } else {
+                card.style.display = "none";
+              }
+            } else {
+              if (card.dataset.year === filter) {
+                card.style.display = "block";
+              } else {
+                card.style.display = "none";
+              }
+            }
+          });
+        });
+      });
+
+      // Smooth scroll animation for cards
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".publication-card").forEach((card) => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(20px)";
+        card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        observer.observe(card);
+      });
+    </script> -->
+
+    <!--  -->
+    <script>
+      document.addEventListener("click", function (e) {
+        const el = document.elementFromPoint(e.clientX, e.clientY);
+        console.log("Clicked element is:", el);
+      });
+      //
+      // document
+      //   .querySelector(".ctaBtnIndex")
+      //   .addEventListener("click", function (e) {
+      //     console.log("Link clicked — manually opening!");
+      //     window.open(this.href, "_blank"); // force open in new tab
+      //   });
+    </script>
+    <!--  -->
+  </body>
+</html>
