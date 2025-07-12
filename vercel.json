@@ -5,7 +5,7 @@
     { "source": "/books", "destination": "/books.html" },
     { "source": "/journal-articles", "destination": "/journal-articles.html" },
     { "source": "/selected-articles", "destination": "/selected-articles.html" },
-    { "source": "/working-papers", "destination": "/working-paper.html" },
+    { "source": "/working-paper", "destination": "/working-paper.html" },
     { "source": "/current-projects", "destination": "/current-projects.html" },
     { "source": "/chapter-books", "destination": "/chapter-books.html" }
   ]
