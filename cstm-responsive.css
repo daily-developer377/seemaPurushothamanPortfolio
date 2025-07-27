@@ -11,4 +11,12 @@
     font-size: 40px !important;
     line-height: 50px;
   }
+  .uFourBreak {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .uFourBreak {
+    display: none;
+  }
 }
