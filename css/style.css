@@ -574,7 +574,7 @@ breadcrumbs
   transition: 0.3s ease-in-out;
 }
 .sb-breadcrumbs li {
-  white-space: nowrap;
+  /* white-space: nowrap; */
   display: flex;
   letter-spacing: 0;
 }

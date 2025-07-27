@@ -136,8 +136,7 @@
 
 .course-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .course-card:hover::before {
@@ -239,6 +238,10 @@
   animation-delay: 0.8s;
 }
 
+.teachingHeading::after {
+  display: none !important;
+}
+
 /* end course taught section */
 
 /* books page styles */
@@ -258,7 +261,9 @@
   margin-bottom: 4rem;
   position: relative;
 }
-
+.booksHeading::after {
+  display: none !important;
+}
 .section-header::after {
   content: "";
   position: absolute;
@@ -792,7 +797,7 @@
   display: inline-block;
 }
 
-.section-title::after {
+/* .section-title::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -801,7 +806,7 @@
   height: 3px;
   background: #f5c332;
   border-radius: 2px;
-}
+} */
 
 .section-subtitle {
   color: #6c757d;
@@ -1721,11 +1726,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    45deg,
-    rgba(245, 195, 50, 0.9),
-    rgba(245, 195, 50, 0.7)
-  );
+  background: linear-gradient(45deg, rgba(245, 195, 50, 0.9), rgba(245, 195, 50, 0.7));
   display: flex;
   align-items: center;
   justify-content: center;
