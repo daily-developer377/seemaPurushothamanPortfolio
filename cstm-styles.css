@@ -34,6 +34,126 @@
 .biographyParaContainer p {
   text-align: justify;
 }
+.biography-image-slider,
+.biography-image-slider .owl-stage-outer,
+.biography-image-slider .owl-stage,
+.biography-image-slider .owl-item,
+.biography-image-slide {
+  height: 100%;
+}
+
+.biography-image-slider.owl-carousel {
+  display: block;
+}
+
+.biography-image-slider .owl-item {
+  overflow: hidden;
+}
+
+.biography-image-slider .owl-nav button.owl-prev,
+.biography-image-slider .owl-nav button.owl-next {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.88) !important;
+  border: 1px solid rgba(245, 195, 50, 0.45) !important;
+  border-radius: 50%;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+  display: flex;
+  height: 42px;
+  justify-content: center;
+  margin: 0;
+  padding: 0 !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.25s ease;
+  width: 42px;
+  z-index: 6;
+}
+
+.biography-image-slider .owl-nav button.owl-prev {
+  left: 18px;
+}
+
+.biography-image-slider .owl-nav button.owl-next {
+  right: 18px;
+}
+
+.biography-image-slider .owl-nav button.owl-prev:hover,
+.biography-image-slider .owl-nav button.owl-next:hover {
+  background: #f5c332 !important;
+  border-color: #f5c332 !important;
+}
+
+.biography-image-slider .owl-nav button span {
+  border-color: #333;
+  border-style: solid;
+  display: block;
+  height: 11px;
+  transition: border-color 0.25s ease;
+  width: 11px;
+}
+
+.biography-image-slider .owl-nav button.owl-prev span {
+  border-width: 0 0 2px 2px;
+  margin-left: 4px;
+  transform: rotate(45deg);
+}
+
+.biography-image-slider .owl-nav button.owl-next span {
+  border-width: 2px 2px 0 0;
+  margin-right: 4px;
+  transform: rotate(45deg);
+}
+
+.biography-image-slider .owl-nav button:hover span {
+  border-color: #ffffff;
+}
+
+.biography-image-slider .owl-dots {
+  bottom: 18px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 5;
+}
+
+.biography-image-slider .owl-dot {
+  background: rgba(255, 255, 255, 0.72) !important;
+  border: 0;
+  border-radius: 50%;
+  height: 9px;
+  padding: 0 !important;
+  transition: all 0.3s ease;
+  width: 9px;
+}
+
+.biography-image-slider .owl-dot.active {
+  background: #f5c332 !important;
+  transform: scale(1.25);
+}
+
+.biography-image-slider .owl-dot span {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .biography-image-slider .owl-nav button.owl-prev,
+  .biography-image-slider .owl-nav button.owl-next {
+    height: 36px;
+    width: 36px;
+  }
+
+  .biography-image-slider .owl-nav button.owl-prev {
+    left: 12px;
+  }
+
+  .biography-image-slider .owl-nav button.owl-next {
+    right: 12px;
+  }
+}
 .sb-category-icon-cstm {
   margin: 0 !important;
 }
@@ -1541,6 +1661,17 @@
 .project-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
+}
+
+.project-card-link {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+.project-card-link:hover {
+  color: inherit;
+  text-decoration: none;
 }
 
 .project-number {

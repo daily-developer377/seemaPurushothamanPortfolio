@@ -20,6 +20,11 @@
     <link href="css/plugins/mapbox-style.css" rel="stylesheet" />
     <!-- fancybox css -->
     <link rel="stylesheet" href="css/plugins/fancybox.min.css" />
+    <!-- owl carousel css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
     <!-- starbelly css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="cstm-styles.css" />
@@ -221,7 +226,23 @@
               <div class="col-lg-6 align-self-center">
                 <div class="sb-illustration-2 sb-mb-90">
                   <div class="sb-interior-frame">
-                    <img src="assets/images/about/aboutImage.jpeg" alt="interior" class="sb-interior" />
+                    <div class="biography-image-slider owl-carousel">
+                      <div class="biography-image-slide">
+                        <img src="assets/images/about/aboutImage.jpeg" alt="Seema Purushothaman" class="sb-interior" />
+                      </div>
+                      <div class="biography-image-slide">
+                        <img src="assets/images/about/2.jpg" alt="Biographical sketch image" class="sb-interior" />
+                      </div>
+                      <div class="biography-image-slide">
+                        <img src="assets/images/about/3.jpg" alt="Biographical sketch image" class="sb-interior" />
+                      </div>
+                      <div class="biography-image-slide">
+                        <img src="assets/images/about/5.jpg" alt="Biographical sketch image" class="sb-interior" />
+                      </div>
+                      <div class="biography-image-slide">
+                        <img src="assets/images/about/6.jpg" alt="Biographical sketch image" class="sb-interior" />
+                      </div>
+                    </div>
                   </div>
                   <div class="sb-square"></div>
                   <div class="sb-cirkle-1"></div>
@@ -516,6 +537,8 @@
 
     <!-- jquery js -->
     <script src="js/plugins/jquery.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- smooth scroll js -->
     <script src="js/plugins/smooth-scroll.js"></script>
     <!-- swup js -->
@@ -534,6 +557,39 @@
     <script src="js/plugins/fancybox.min.js"></script>
     <!-- starbelly js -->
     <script src="js/main.js"></script>
+
+    <!--  -->
+    <script>
+      $(document).ready(function () {
+        if (!$.fn.owlCarousel) {
+          return;
+        }
+
+        $(".biography-image-slider").owlCarousel({
+          items: 1,
+          loop: true,
+          margin: 16,
+          nav: true,
+          navText: ['<span aria-label="Previous slide"></span>', '<span aria-label="Next slide"></span>'],
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 3500,
+          autoplayHoverPause: true,
+          smartSpeed: 700,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            768: {
+              items: 1,
+            },
+            1200: {
+              items: 1,
+            },
+          },
+        });
+      });
+    </script>
 
     <!--  -->
     <script>
