@@ -558,40 +558,6 @@
     <!-- starbelly js -->
     <script src="js/main.js"></script>
 
-    <!--  -->
-    <script>
-      $(document).ready(function () {
-        if (!$.fn.owlCarousel) {
-          return;
-        }
-
-        $(".biography-image-slider").owlCarousel({
-          items: 1,
-          loop: true,
-          margin: 16,
-          nav: true,
-          navText: ['<span aria-label="Previous slide"></span>', '<span aria-label="Next slide"></span>'],
-          dots: true,
-          autoplay: true,
-          autoplayTimeout: 3500,
-          autoplayHoverPause: true,
-          smartSpeed: 700,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            768: {
-              items: 1,
-            },
-            1200: {
-              items: 1,
-            },
-          },
-        });
-      });
-    </script>
-
-    <!--  -->
     <script>
       document.addEventListener("click", function (e) {
         const el = document.elementFromPoint(e.clientX, e.clientY);

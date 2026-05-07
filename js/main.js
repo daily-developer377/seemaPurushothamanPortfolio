@@ -11,6 +11,124 @@ p.s. I am available for Freelance hire (UI design, web development). mail: mille
 
 $(function () {
   "use strict";
+  var owlCarouselCss =
+    "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css";
+  var owlCarouselJs =
+    "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js";
+
+  function loadStylesheetOnce(href) {
+    if ($('link[href="' + href + '"]').length) {
+      return;
+    }
+
+    $("<link>", {
+      rel: "stylesheet",
+      href: href,
+    }).appendTo("head");
+  }
+
+  function loadScriptOnce(src) {
+    var deferred = $.Deferred();
+    var existingScript = $('script[src="' + src + '"]');
+
+    if ($.fn.owlCarousel) {
+      deferred.resolve();
+    } else if (existingScript.length) {
+      existingScript.on("load", function () {
+        deferred.resolve();
+      });
+      existingScript.on("error", function () {
+        deferred.reject();
+      });
+    } else {
+      $.getScript(src).done(deferred.resolve).fail(deferred.reject);
+    }
+
+    return deferred.promise();
+  }
+
+  function whenImagesAreReady($container) {
+    var deferred = $.Deferred();
+    var $images = $container.find("img");
+    var remaining = $images.length;
+
+    if (!remaining) {
+      deferred.resolve();
+      return deferred.promise();
+    }
+
+    $images.each(function () {
+      if (this.complete) {
+        remaining--;
+      } else {
+        $(this).one("load error", function () {
+          remaining--;
+          if (!remaining) {
+            deferred.resolve();
+          }
+        });
+      }
+    });
+
+    if (!remaining) {
+      deferred.resolve();
+    }
+
+    return deferred.promise();
+  }
+
+  function initBiographyImageSlider() {
+    var $slider = $(".biography-image-slider");
+
+    if (!$slider.length) {
+      return;
+    }
+
+    loadStylesheetOnce(owlCarouselCss);
+    loadScriptOnce(owlCarouselJs).done(function () {
+      whenImagesAreReady($slider).done(function () {
+        $slider.each(function () {
+          var $this = $(this);
+
+          if ($this.hasClass("owl-loaded")) {
+            $this.trigger("refresh.owl.carousel");
+            return;
+          }
+
+          $this.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 16,
+            nav: true,
+            navText: [
+              '<span aria-label="Previous slide"></span>',
+              '<span aria-label="Next slide"></span>',
+            ],
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 3500,
+            autoplayHoverPause: true,
+            smartSpeed: 700,
+            responsive: {
+              0: {
+                items: 1,
+              },
+              768: {
+                items: 1,
+              },
+              1200: {
+                items: 1,
+              },
+            },
+          });
+
+          setTimeout(function () {
+            $this.trigger("refresh.owl.carousel");
+          }, 100);
+        });
+      });
+    });
+  }
   /***************************
 
   preloader
@@ -123,6 +241,7 @@ $(function () {
     transitionDuration: 1200,
   });
   $.fancybox.defaults.hash = false;
+  initBiographyImageSlider();
   /***************************
 
   
@@ -391,7 +510,7 @@ $(function () {
   ***************************/
   if ($("div").is("#map")) {
     mapboxgl.accessToken =
-      "pk.eyJ1Ijoic3Rvc2NhciIsImEiOiJja2VpbDE4b2UwbDg3MnNwY2d3YzlvcDV5In0.e26tLedpKwxrkOmPkWhQlg";
+      "";
     var map = new mapboxgl.Map({
       container: "map",
       style: "mapbox://styles/stoscar/ckk6qpt2h0yi517o77x3tw34f",
@@ -493,6 +612,7 @@ $(function () {
       transitionDuration: 1200,
     });
     $.fancybox.defaults.hash = false;
+    initBiographyImageSlider();
     /***************************
 
     click effect
@@ -728,7 +848,7 @@ $(function () {
     ***************************/
     if ($("div").is("#map")) {
       mapboxgl.accessToken =
-        "pk.eyJ1Ijoic3Rvc2NhciIsImEiOiJja2VpbDE4b2UwbDg3MnNwY2d3YzlvcDV5In0.e26tLedpKwxrkOmPkWhQlg";
+        "";
       var map = new mapboxgl.Map({
         container: "map",
         style: "mapbox://styles/stoscar/ckk6qpt2h0yi517o77x3tw34f",
